@@ -1,0 +1,124 @@
+title: Using EM&ensp;&rarr;&ensp;Tour&thinsp;00&thinsp;&ndash;&thinsp;guided tours
+$dev: false
+files:
+  - em.docs:em.examples.basic/HelloP.em
+  - em.core:em.hal/ConsoleUartI.em
+  - em.core:em.mcu/ConsoleUart.em
+
+steps:
+
+  - cmds:
+      - open 1
+    focus: [1,1]
+    text: |
+
+        {[ht,$start]HelloP.em &ndash; welcome}
+
+        This tour does _not_ explain the {[cu]HelloP} program; rather it gives you some hints on using the **EM TOUR GUIDE**.
+
+        Once launched with the **EM - Start Tour** command, this view appears in the lower-right of your workspace.
+
+        To proceed through the current tour, you'll use the five buttons across the top of this view:
+
+        {[bm,1]} **Back** &ndash; go to the previous stop on this tour<br>
+        {[bm,2]} **Next** &ndash; go to the next stop on this tour<br>
+        {[bm,3]} **Refresh** &ndash; replay the current stop on this tour<br>
+        {[bm,4]} **Restart** &ndash; rewind to the first stop on this tour <br>
+        {[bm,5]} **End** &ndash; stop this tour and close the **EM TOUR GUIDE**<br>
+
+        With that, click on **Next** to continue with **Tour&thinsp;00**.
+
+  - cmds:
+      - build 1 -l
+    focus: [1,1]
+    text: |
+
+        {[ht,$build]HelloP.em &ndash; build + load}
+
+        Stop **2 of _n_** of all tours within this series will build and then load the current program of interest.
+
+        On some tours, we'll ask you to look at the **OUTPUT** panel to note the _size_ of the resulting executable.
+
+        By design, none of the tours in this series produce {[cd]printf} output; they simply blink LEDs on your board.
+
+        Click on **Next** to proceed to the third stop on this tour.
+
+
+  - cmds:
+      - mark 1 A 3
+      - mark 1 B 9
+    focus: [1,1]
+    text: |
+
+        {[ht,$details]HelloP.em &ndash; details}
+
+        All tours in this series will eventually deep-dive into the current program, as well as other units it may {[ck]import}.
+
+        In each case, the **EM TOUR GUIDE** will open all source files as _readonly_ &ndash; to prevent any accidental changes. 
+
+        You'll also find a set of lettered "bookmarks" in some of these files, with corresponding commentary here:    
+
+        <div class="em-bmlist">
+
+        {[bm,A]} We've already introduced the _distro_ concept in EM. 
+
+        {[bm,B]} You undoubtedly know what to expect here.
+
+        Click **Next** and let's keep moving.
+
+        </div>
+
+  - cmds:
+      - open 2
+    focus: [2,1]
+    text: |
+
+        {[ht,$peek]ConsoleUartI.em &ndash; quick peek}
+
+        Sometimes the tour will just take a quick peek at a par&shy;ticular&thinsp;{[cx].em} source file, with only minimal commentary.
+
+        FYI &ndash; the first four buttons atop the **EM TOUR GUIDE** panel have keyboard shortcuts, which you may prefer.
+
+        Hover over **Next**, for example, and try entering its corresponding shortcut.
+
+  - cmds:
+      - open 3
+    focus: [3,1]
+    text: |
+
+        {[ht,$look]ConsoleUart.em &ndash; longer look}
+
+        But sometimes the tour will linger a bit longer at a par&shy;ticular&thinsp;{[cx].em} file, explaining its design in more depth.
+
+        You may have noticed the "suggestive" icons in the title of each tour stop; select **Back** to see for yourself.
+
+        When ready, select **Next** as we've almost reached the end of this tour.
+
+  - cmds: []
+    focus: [1,1]
+    text: |
+
+        {[ht,$extra]HelloP.em &ndash; extra credit}
+
+        The penultimate stop on each tour will offer a set of suggestions to increase your knowledge of EM.
+
+        <br>{[bi,task_alt]} Study a Saleae logic capture of the program.
+
+        {[bi,task_alt]} Clone the program into your personal bundle.
+
+        {[bi,task_alt]} Understand more of EM by tweaking the program.
+
+        {[bi,sentiment_satisfied]} Happy coding&thinsp;!!!
+
+        <br>And for the last time, **Next**.
+
+  - cmds: []
+    focus: [1,1]
+    text: |
+
+        {[ht,$steps]HelloP.em &ndash; next steps}
+
+        The last stop on each tour typically prepares you for the next tour in the series.
+
+        Having toured the **EM TOUR GUIDE**, let's return to the {[le,https://docs.openem.org/using/using-02#tour-01-basic-blinker]Using EM} documentation.
+
