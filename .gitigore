@@ -1,0 +1,8 @@
+.em-cargo/
+.env
+.gitigore
+.vscode/
+client.ts
+dist/
+local.properties
+node_modules/
