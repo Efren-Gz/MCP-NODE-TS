@@ -1,0 +1,129 @@
+{
+    "mcp": {
+        "inputs": [],
+        "servers": {
+            "remote-mcp": {
+                "type": "sse",
+                "url": "http://localhost:3001/sse"               
+            },
+            "mcp-github": {
+              "type": "stdio",
+                "command": "npx",
+                "args": [
+                    "-y",
+                    "tsx",
+                    //Esta es la ruta donde se encuentra el servidor MCP
+                    //Asegúrate de que la ruta sea correcta y que el archivo exista
+                    //Si estás utilizando un sistema operativo diferente, ajusta la ruta según corresponda
+                    //Por ejemplo, en Linux o macOS podría ser algo como "/home/usuario/m
+                     "C:/Users/jgar0/Documents/MCP/mcp-node/mcp-server.ts"
+                ],
+                "env": {
+                    // Aquí debes colocar tu token de GitHub
+                    // Puedes obtenerlo desde tu cuenta de GitHub en la sección de "Settings" -> "Developer settings" -> "Personal access tokens"
+                    // Asegúrate de que el token tenga los permisos necesarios para acceder a los repos
+                    "GITHUB_TOKEN": "<TU_TOKEN_DE_GITHUB>"
+                }
+            }
+        }
+    },
+    "chat.mcp.discovery.enabled": true,
+    "vsicons.associations.folders": [
+        {
+            "icon": "embundle",
+            "extensions": [
+                "em.build-24.0.10.202312251725",
+                "em.core-24.0.10.202312251725",
+                "em.docs-24.0.10.202312251725",
+                "ti.cc23xx-24.0.10.202312251725"
+            ],
+            "format": "svg"
+        },
+        {
+            "icon": "embundles",
+            "extensions": [
+                ".em-cargo"
+            ],
+            "format": "svg"
+        },
+        {
+            "icon": "empkg",
+            "extensions": [
+                "em.build.clang.arm",
+                "em.build.gcc",
+                "em.build.gcc2",
+                "em.build.iar.arm",
+                "em.build.misc",
+                "em.build.segger",
+                "em.build.segger2",
+                "em.build.ticc.arm",
+                "em.build.ticc.msp430",
+                "em.hal",
+                "em.lang",
+                "em.mcu",
+                "em.utils",
+                "em.examples.basic",
+                "com.ti",
+                "ti.build.cc23xx",
+                "ti.distro.cc23xx",
+                "ti.mcu.cc23xx"
+            ],
+            "format": "svg"
+        },
+        {
+            "icon": "app",
+            "extensions": [
+                ".gen"
+            ],
+            "format": "svg"
+        },
+        {
+            "icon": "binary",
+            "extensions": [
+                ".out"
+            ],
+            "format": "svg"
+        },
+        {
+            "icon": "docs",
+            "extensions": [
+                ".tours"
+            ],
+            "format": "svg"
+        },
+        {
+            "icon": "services",
+            "extensions": [
+                ".em-boot"
+            ],
+            "format": "svg"
+        }
+    ],
+    "vsicons.associations.files": [
+        {
+            "icon": "emunit",
+            "extensions": [
+                ".em"
+            ],
+            "format": "svg"
+        },
+        {
+            "icon": "emschema",
+            "extensions": [
+                ".schema",
+                ".ems"
+            ],
+            "format": "svg"
+        },
+        {
+            "icon": "emboards",
+            "extensions": [
+                "em-boards",
+                "em-boards-local"
+            ],
+            "filename": true,
+            "format": "svg"
+        }
+    ],
+    "vsicons.customIconFolderPath": "c:\\Users\\jgar0\\.vscode\\extensions\\the-em-foundation.em-builder-24.0.10\\etc"
+}
